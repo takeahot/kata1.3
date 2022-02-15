@@ -30,6 +30,8 @@
     padding: 0;
     background-color: #F8F8F8;
     height: 100%;
+    width: 100vw;
+    overflow: hidden;
     /* border: 1px solid #000; */
 }
 
