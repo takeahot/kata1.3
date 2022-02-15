@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/fonts/TTLakes/TTLakes-Regular.eot');
-    src: local('TT Lakes Regular'), local('/fonts/TTLakes/TTLakes-Regular'),
-        url('/fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
-        url('/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    src: url('fonts/TTLakes/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('fonts/TTLakes/TTLakes-Regular'),
+        url('fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+        url('fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/fonts/TTLakes/TTLakes-Bold.eot');
-    src: local('TT Lakes Bold'), local('/fonts/TTLakes/TTLakes-Bold'),
-        url('/fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
-        url('/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    src: url('fonts/TTLakes/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('fonts/TTLakes/TTLakes-Bold'),
+        url('fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+        url('fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -27,6 +27,8 @@
     margin: 0;
     padding: 0;
     background-color: #F8F8F8;
+    height: 100%;
+    border: 1px solid #000;
 }
 
 .page__header{
@@ -92,7 +94,6 @@
     box-sizing: border-box;
     height: 40px;
     white-space: nowrap;
-    vertical-align: middle;
     border: 2px solid transparent;
 }
 
@@ -175,7 +176,10 @@
 
 .main {
     padding: 0;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    border: 1px solid gray;
 }
 
 .main__section {
@@ -197,7 +201,21 @@
     border-radius: 4px;
 }
 .text-main {
+    /* display: flex; */
+    /* flex-direction: column; */
     height: 100%;
+    padding: 0px 16px;
+    flex: 1 1 auto;
+}
+.text-main__text {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 8%;
+}
+.text-main__readMore {
+    flex: 1 1 auto;
+    /* display: block; */
 }
 
 @media (max-width: 767px) {
