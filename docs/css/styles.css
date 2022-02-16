@@ -216,16 +216,49 @@
     flex-direction: column;
     padding: 0px 16px;
 }
+.text-main::after {
+    z-index: 0;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    content: '';
+    background: url(../image/_MG_3223.jpg) no-repeat;
+    background-clip: border-box;
+}
 .text-main__text {
-    flex: 25 1 0;
+    /* flex: 25 1 0; */
     overflow: hidden;
-    text-overflow: ellipsis;
-    /* max-height: 8%; */
+    /* text-overflow: ellipsis; */
+    order: 1;
+    max-height: 25.212%; 
 }
-.text-main__readMore {
-    flex: 74 1 0;
-    /* display: block; */
+.text-main__read-more-label {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
+.text-main__read-more-text {
+    order: 2;
+    /* flex: 74 1 0; */
+    font-size: 16px;
+    line-height: 24px;
+}
+.text-main__read-more-check {
+    position: absolute;
+    left:-100px;
+}
+.text-main__read-more-text::before {
+    position: relative;
+    content:url(../icons/readMore.svg);
+    height: 24px;
+    top: 6px;
+}
+.text-main__read-more-check:checked ~ .text-main__text ,.text-main__read-more-check:checked ~ .text-main__read-more-text {
+    /* flex: 0 1 auto; */
+    max-height: none;
+}
+
 
 @media (max-width: 767px) {
   /* стили для xs-устройств*/
