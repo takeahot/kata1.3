@@ -216,15 +216,19 @@
     flex-direction: column;
     padding: 0px 16px;
 }
-.text-main::after {
-    z-index: 0;
+.main__decorate-img {
     position: absolute;
-    height: 30%;
+    bottom: 1.27%; 
+    height: 38.65%;
     width: 100%;
-    content: '';
+    box-sizing: border-box;
+    padding: 8.5% 0px;
     background: url(../image/_MG_3223.jpg) no-repeat;
-    background-clip: border-box;
+    /* background-clip: border-box; */
+    background-clip: content-box;
+    background-position: center;
 }
+
 .text-main__text {
     /* flex: 25 1 0; */
     overflow: hidden;
