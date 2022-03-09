@@ -194,6 +194,20 @@
     margin: 24px 0px 0px 0px;
 }
 
+.main__decorate-img {
+    position: absolute;
+    bottom: 1.27%; 
+    height: 38.65%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8.5% 0px;
+    background: url(../image/_MG_3223.jpg) no-repeat;
+    /* background-clip: border-box; */
+    background-position: center;
+    background-clip: content-box;
+    background-size: cover;
+}
+
 .text-header-first {
     flex: 0 1 40px;
     font-size: 2rem;
@@ -216,18 +230,7 @@
     flex-direction: column;
     padding: 0px 16px;
 }
-.main__decorate-img {
-    position: absolute;
-    bottom: 1.27%; 
-    height: 38.65%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8.5% 0px;
-    background: url(../image/_MG_3223.jpg) no-repeat;
-    /* background-clip: border-box; */
-    background-clip: content-box;
-    background-position: center;
-}
+
 
 .text-main__text {
     /* flex: 25 1 0; */
@@ -264,6 +267,8 @@
 }
 
 
+
+
 @media (max-width: 767px) {
   /* стили для xs-устройств*/
     .header__elem--hidden--xs {
@@ -271,3 +276,16 @@
         top: -100%;
     }
 } 
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* стили для sm-устройств */ 
+    .header__elem--hidden--sm {
+        position: absolute;
+        top: -100%;
+    }
+
+    .main__section:not(:first-child) {
+        margin: 32px 0px 0px 0px;
+    }
+
+}
