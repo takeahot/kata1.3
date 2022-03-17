@@ -1,0 +1,23 @@
+.manage-img {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $screen-md) {
+        justify-content: flex-end;
+    }
+
+    &__img {
+        height: 176px; 
+        margin:auto;
+
+        @media (min-width: $screen-md) {
+            height: 208px; 
+            margin: 0;
+        }
+
+        @media (min-width: $screen-lg) {
+            height: 307px; 
+            margin: 0;
+        }
+    }
+}

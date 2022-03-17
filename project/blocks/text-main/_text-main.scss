@@ -1,0 +1,82 @@
+.text-main {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	padding-top: 24px;
+
+	@media (min-width: $screen-md) {
+		flex-direction: row;	
+		padding: 32px 24px 0px;
+	}
+
+	@media (min-width: $screen-lg) {
+		padding: 10px 32px 0px;
+
+	}
+
+	&__read-more-label {
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding: 0px 16px;
+
+		@media (min-width: $screen-md) {
+			padding: 0px;
+			flex-basis: 360px;
+		}
+
+	}
+
+	&__read-more-check {
+		position: absolute;
+		left: -100px;
+
+		&:checked ~ .text-main__text,
+		&:checked ~ .text-main__read-more-text {
+			/* flex: 0 1 auto; */
+			max-height: none;
+		}
+	}
+	
+	&__text {
+		overflow: hidden;
+		order: 1;
+		max-height: 90px;
+
+		@media (min-width:$screen-md) {
+			max-height: 160px;	
+			padding-right: 48px;
+		}
+	}
+
+	&__read-more-text {
+		order: 2;
+		/* flex: 74 1 0; */
+		font-size: 16px;
+		line-height: 24px;
+
+		&::before {
+			position: relative;
+			content: url(../icons/readMore.svg);
+			height: 24px;
+			top: 6px;
+		}
+	}
+
+	&__decorate-img {
+		padding: 16px 0 0 0;
+
+		@media (min-width:$screen-md) {
+			flex: 1 1 360px;
+			padding: 0;
+			overflow: hidden;
+		}
+	}	
+
+	&__parag {
+		margin: 0px;
+	}
+}
+
+

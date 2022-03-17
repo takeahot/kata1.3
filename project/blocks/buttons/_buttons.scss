@@ -1,0 +1,23 @@
+.buttons {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	justify-content: flex-start;
+	
+	@media (min-width: $screen-lg) {
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		padding-left: 16px;
+
+		@media (min-width: $screen-lg) {
+			padding-left: 32px;
+		}
+
+		&:first-child {
+			padding-left: 0px;
+		}
+	}
+}
+

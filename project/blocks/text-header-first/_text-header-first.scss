@@ -1,0 +1,31 @@
+.text-header-first {
+	flex: 0 1 40px;
+	font-size: $font-size--h1;
+	line-height: 40px;
+	padding: 24px 16px 0px;
+	margin: 0;
+
+	@media (min-width: $screen-md) {
+		flex-basis: 100%;
+		align-self: flex-start;
+		padding: 24px 24px 0px;
+	}
+
+	@media (min-width: $screen-lg) {
+		padding: 0 32px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: -4px;
+		height: 40px;
+		border-right: 4px solid #41f6d7;
+		border-left: 4px solid transparent;
+		border-radius: 4px;
+	}
+
+}
+
+
+

@@ -1,0 +1,20 @@
+@import '_variables.scss';           // правильно
+// @import 'mixins.scss';              // правильно
+ 
+@import '../../project/blocks/html/_html.scss';
+    @import '../../project/blocks/page/_page.scss';
+        @import '../../project/blocks/header/_header.scss';
+            @import '../../project/blocks/nav/_nav.scss';
+            @import '../../project/blocks/separator/_separator.scss';
+            @import '../../project/blocks/buttons/_buttons.scss';
+                @import '../../project/blocks/button/_button.scss';
+                    @import '../../project/blocks/logo/_logo.scss';
+                    @import '../../project/blocks/icon/_icon.scss';
+        @import '../../project/blocks/main/_main.scss';
+            @import '../../project/blocks/text-header-first/_text-header-first.scss';
+            @import '../../project/blocks/menu/_menu.scss';
+            @import '../../project/blocks/text-main/_text-main.scss';
+                @import '../../project/blocks/manage-img/manage-img';
+
+
+

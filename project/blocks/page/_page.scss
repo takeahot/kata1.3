@@ -1,0 +1,35 @@
+// @import "../../../docs/styles/variables.scss";
+
+.page {
+	display: flex;
+	flex-direction: column;
+	font-family: $font-family;
+	font-weight: normal;
+	font-size: $font-size;
+	line-height: $line-height-sm;
+	margin: 0;
+	padding: 0;
+	background-color: $color-page-back;
+	height: 100%;
+	width: 100vw;
+	overflow-x: hidden;
+
+	@media (min-width:$screen-md) {
+		line-height: $line-height-md;	
+	}
+
+	&__header {
+		width: auto;
+		min-height: 88px;
+		flex: 0 1 88px;
+
+		@media (min-width: $screen-lg) {
+			min-height: 0;			
+			flex: 0 1 0;
+		}
+	}
+
+	&__main {
+		flex: 1 1 auto;
+	}
+}
