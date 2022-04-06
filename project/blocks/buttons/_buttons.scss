@@ -3,6 +3,8 @@
 	align-items: center;
 	list-style: none;
 	justify-content: flex-start;
+	line-height: 24px;
+	vertical-align: middle;
 	
 	@media (min-width: $screen-lg) {
 		flex-wrap: wrap;
@@ -18,6 +20,17 @@
 		&:first-child {
 			padding-left: 0px;
 		}
+
+		&--side {
+				padding-left: 0;
+				flex-basis: 32px;
+		}		
+
+		&--to-tail {
+			margin-left: auto;
+		}
 	}
 }
+
+
 

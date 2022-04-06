@@ -1,4 +1,5 @@
 .menu {
+	position: relative;
 	padding: 24px 16px 0px;
 	flex: 0 1 40px;
 
@@ -6,21 +7,107 @@
 		padding: 32px 24px 0;	
 	}
 
-	@media (min-width: $screen-md) {
+	@media (min-width: $screen-lg) {
 		padding: 8.37px 32px 0;	
 	}
 
-		&__list {
-		margin: 0px;
+	&__list {
+		margin: 0px ;
 		padding: 0px;
+
+		&--side {
+			flex-direction: column;
+			padding-left: 16px;
+			align-items: flex-start;
+
+			@media (min-width: $screen-md) {
+				padding-left: 24px;
+			}
+		}
+	}
+
+	&__field {
+		display: flex;
+		flex-direction: column;
+		position:absolute;
+		top: -24px;
+		left: -16px;
+		width: 320px;
+		background-color: white;
+		border: solid 1px gold;
+		padding-left: 0;
+
+		@media (min-width: $screen-md) {
+			left: -24px;	
 		}
 
-		&--nav {
-			display: none;
-			width: 200px;
-			height: 200px;
-			background: #000;
+		@media (min-width: $screen-lg) {
+			left: -32px;
+			top: -42px;
 		}
+	}
+
+	&__header {
+		display: flex;
+		height: 88px;
+		padding: 0px 16px;
+
+		@media (min-width: $screen-md) {
+			padding: 0px 24px;	
+		}
+	}
+
+	&__logo {
+		margin-left: 56px;
+
+		@media (min-width: $screen-lg) {
+			margin-left: -2px;	
+		}
+	}
+
+	&__label {
+		z-index: 10;
+
+		&--hidden--lg {
+			@media (min-width: $screen-lg) {
+				position: absolute;
+				top: -1000px;
+			}
+		}
+	}
+
+	&__item {
+		min-height: 32px;
+		padding-top: 16px;
+
+		&:first-of-type {
+			padding-top: 4px;	
+		}
+
+		&--active {
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: -4px;
+				height: 32px;
+				border-right: 4px solid #41f6d7;
+				border-left: 4px solid transparent;
+				border-radius: 4px;
+			}
+		}
+	}
+
+	&__footer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: start;
+		padding-left: 16px;
+	}
+
+	&--side {
+		padding: 0;
+	}
 }
 
 
