@@ -1,5 +1,4 @@
 .menu {
-	position: relative;
 	padding: 24px 16px 0px;
 	flex: 0 1 40px;
 
@@ -27,15 +26,19 @@
 	}
 
 	&__field {
+		visibility: hidden;
 		display: flex;
 		flex-direction: column;
 		position:absolute;
-		top: -24px;
-		left: -16px;
+		top: 0px;
+		left: 0px;
 		width: 320px;
+		height: 100%;
 		background-color: white;
-		border: solid 1px gold;
+		// border: solid 1px gold;
 		padding-left: 0;
+		transform: translateX(-100%);
+		transition: 0.7s;
 
 		@media (min-width: $screen-md) {
 			left: -24px;	
@@ -45,6 +48,11 @@
 			left: -32px;
 			top: -42px;
 		}
+	}
+
+	&__check:checked ~ .menu__field {
+		visibility: visible;
+		transform: translateX(0px);
 	}
 
 	&__header {
@@ -76,6 +84,11 @@
 		}
 	}
 
+	&__label-text {
+		position: absolute;
+		opacity: 0;
+	}
+
 	&__item {
 		min-height: 32px;
 		padding-top: 16px;
@@ -103,7 +116,70 @@
 		flex-wrap: wrap;
 		justify-content: start;
 		padding-left: 16px;
+		align-content: flex-end;
+		flex: 1;
 	}
+
+	&__item-container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__icon {
+		width: 100%;
+		padding: 19px;
+		padding-left: 11px;
+	}
+
+	&__icon-line {
+		display: block;
+		width: 10px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: #fff;
+		transition: 0.7s;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 18px;
+			height: 2px;
+			border-radius: 1px;
+			background-color: #fff;
+			transform: translateY(-7px);
+			transition: 0.7s;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 14px;
+			height: 2px;
+			border-radius: 1px;
+			background-color: #fff;
+			transform: translateY(5px);
+			transition: 0.7s;
+		}
+	}
+
+	&__check:checked ~ .menu__label>.menu__icon>.menu__icon-line {
+		transform-origin: 9px 1px;
+		background-color: transparent;
+	} 
+
+	&__check:checked ~ .menu__label>.menu__icon>.menu__icon-line::before {
+		transform-origin: 11px 1px;
+		width: 22px;
+		transform: translate(-2px,0px) rotate(45deg);
+	} 
+
+	&__check:checked ~ .menu__label>.menu__icon>.menu__icon-line::after {
+		transform-origin: 11px 1px;
+		width: 22px;
+		transform: translate(-2px,-2px) rotate(-45deg);
+	} 
+
 
 	&--side {
 		padding: 0;
