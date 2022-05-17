@@ -15,7 +15,7 @@
 	}
 
 	&__read-more-label {
-		z-index: 1;
+		z-index: 10;
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
@@ -51,21 +51,27 @@
 	}
 
 	&__read-more-text {
+		position: relative;
 		order: 2;
 		/* flex: 74 1 0; */
 		font-size: 16px;
 		line-height: 24px;
+		padding-top: 16px;
+		padding-left: 32px;
+		letter-spacing: -0.1px;
 
 		&::before {
-			position: relative;
+			position: absolute;
 			content: url(../icons/readMore.svg);
 			height: 24px;
-			top: 6px;
+			left: 9px;
+			top: 26px;
+			margin: -10px;
 		}
 	}
 
 	&__decorate-img {
-		padding: 16px 0 0 0;
+		padding: 16px 0 24px 0;
 
 		@media (min-width:$screen-md) {
 			flex: 1 1 360px;
@@ -76,7 +82,6 @@
 
 	&__parag {
 		margin: 0px;
+		letter-spacing: 0.2px;
 	}
 }
-
-

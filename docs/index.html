@@ -12,50 +12,126 @@
     <header class="header page__header ">
         <nav class="nav header__left-side ">
             <ul class="buttons nav__list">
-                <li class="button buttons__item header__elem--hidden--lg">
-                    <input type="checkbox" name="menu_check" id="menu_check" class="button__check" aria-hidden="true">
-                    <label for="menu_check" class="icon button__area">
-                        <button type="button" title="open menu" tabindex="-1" class="button__accessibility">
-                        </button>
-                        <img src="icons/menu.svg" alt="menu icon" class="icon__image">
+                <li class="button menu menu--side header__elem buttons__item ">
+                    <input type="checkbox" name="menu__check" id="menu__check" class="button__check menu__check" aria-hidden="true" >
+                    <label for="menu__check" class="icon button__area menu__label header__elem header__elem--hidden--lg" >
+                        <span class="menu__label-text">Открыть меню</span>
+                        <div class="menu__icon">
+                            <span class="menu__icon-line">
+                            </span>
+                        </div>
+                        <!-- <img src="icons/menu.svg" alt="menu icon" class="icon__image"> -->
                     </label>
-                    <div class="menu__field button__menu">
-                    </div>
+                    <ul class="menu__field">
+                        <li class="menu__item-container">
+                            <ul class="menu__header">
+                                <li class="button buttons__item buttons__item--less-first-field menu__logo">
+                                    <a href="" title="home link" class="logo button__logo">
+                                        <img src="icons/logo.svg" alt="logo image" class="logo__img">
+                                    </a>
+                                </li>
+                                <li class="button buttons__item buttons__item--to-tail">
+                                    <button class="icon button__area" type="button" title="magnifier button">
+                                        <img src="icons/magnifier.svg" alt="magnifier image" class="icon__image">
+                                    </button>
+                                </li>
+                            </ul>
+                            <ul class="buttons menu__list menu__list--side">
+                                <li class="button buttons__item buttons__item--side menu__item menu__item--active ">
+                                    Ремонт техники
+                                </li >
+                                <li class="button buttons__item  buttons__item--side menu__item">
+                                    Услуги и сервисы                                
+                                </li>
+                                <li class="button buttons__item buttons__item--side menu__item ">
+                                    Корпоративным клиентам                                
+                                </li>
+                                <li class="button buttons__item buttons__item--side menu__item ">
+                                    Продавцам техники                                
+                                </li>
+                                <li class="button buttons__item buttons__item--side menu__item ">
+                                    Партнерам
+                                </li>
+                                <li class="button buttons__item buttons__item--side menu__item ">
+                                    Производителям                                
+                                </li>
+                                <li class="button buttons__item buttons__item--side menu__item ">
+                                    Наши сервисные центры                                
+                                </li>
+                                <li class="button buttons__item buttons__item--side menu__item ">
+                                    Контакты                                
+                                </li>
+                            </ul>
+                            <ul class="menu-footer menu__footer">
+                                <li class="button buttons__item buttons__item--less-first-field">
+                                    <button type="button" title="call button" class="icon button__area">
+                                        <img src="icons/phone.svg" alt="call image" class="icon__image">
+                                    </button>
+                                </li>
+                                <li class="button buttons__item">
+                                    <button class="icon button__area" type="button" title="chat button">
+                                        <img src="icons/chat.svg" alt="chat image" class="icon__image">
+                                    </button>
+                                </li>
+                                <li class="button buttons__item">
+                                    <button class="icon button__area" type="button" title="profile button">
+                                        <img src="icons/profile.svg" alt="profile image" class="icon__image">
+                                    </button>
+                                </li>
+                                <li class="button button--width--full button--e-mail">
+                                    mail@cps.com
+                                </li>
+                                <li class="button  button--width--full button--phone">
+                                    8 800 890 8900
+                                </li>
+                                <li class="button  button--lang button--padding-left-zero">
+                                    ru
+                                </li>
+                                <li class="button  button--lang ">
+                                    en 
+                                </li>
+                                <li class="button  button--lang ">
+                                    ch 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
-                <li class="separator header__separator header__elem--hidden--xs header__elem--hidden--lg" aria-hidden="true"></li>
-                <li class="button buttons__item header__elem--hidden--lg">
+                <li class="separator header__separator header__elem header__elem--hidden--xs header__elem--hidden--lg" aria-hidden="true">
+                <li>
+                <li class="button buttons__item header__elem header__elem--hidden--lg">
                     <a href="" title="home link" class="logo button__logo">
                         <img src="icons/logo.svg" alt="logo image" class="logo__img">
                     </a>
                 </li>
-           </ul>
+            </ul>
         </nav>
-        <div class="separator header__separator header__elem--hidden--sm header__elem--hidden--lg" aria-hidden="true"></div>
+        <div class="separator header__separator header__elem header__elem--hidden--md header__elem--hidden--lg" aria-hidden="true"></div>
         <ul class="buttons header__right-side">
-            <li class="button buttons__item header__elem--hidden--xs header__elem--hidden--lg">
+            <li class="button buttons__item header__elem header__elem--hidden--xs header__elem--hidden--lg">
                 <button type="button" title="call button" class="icon button__area">
                     <img src="icons/phone.svg" alt="call image" class="icon__image">
                 </button>
             </li>
-            <li class="button buttons__item header__elem--hidden--xs header__elem--hidden--lg">
+            <li class="button buttons__item header__elem header__elem--hidden--xs header__elem--hidden--lg">
                 <button class="icon button__area" type="button" title="chat button">
                     <img src="icons/chat.svg" alt="chat image" class="icon__image">
                 </button>
             </li>
-            <li class="button buttons__item header__elem--hidden--xs header__elem--hidden--lg">
+            <li class="button buttons__item header__elem header__elem--hidden--xs header__elem--hidden--lg">
                 <button class="icon button__area" type="button" title="profile button">
                     <img src="icons/profile.svg" alt="profile image" class="icon__image">
                 </button>
             </li>
-            <li class="separator header__separator header__elem--hidden--xs header__elem--hidden--lg" aria-hidden="true"></li>
-            <li class="button buttons__item header__elem--poping--lg">
-                <span class="header__text header__elem--hidden--xs header__elem--hidden--sm">Оставить заявку</span>
+            <li class="separator header__separator header__elem header__elem--hidden--xs header__elem--hidden--lg" aria-hidden="true"></li>
+            <li class="button buttons__item header__elem header__elem--poping--lg">
+                <span class="header__text header__elem header__elem--hidden--xs header__elem--hidden--sm header__elem--hidden--md">Оставить заявку</span>
                 <button class="icon button__area" type="button" title="repair button">
                     <img src="icons/repair.svg" alt="repair image" class="icon__image">
                 </button>
             </li>
-            <li class="button buttons__item header__elem--poping--lg">
-                <span class="header__text header__elem--hidden--xs header__elem--hidden--sm ">Статус ремонта</span>
+            <li class="button buttons__item header__elem header__elem--poping--lg">
+                <span class="header__text header__elem header__elem--hidden--xs header__elem--hidden--sm header__elem--hidden--md">Статус ремонта</span>
                 <button class="icon button__area" type="button" title="check status button">
                     <img src="icons/checkstatus.svg" alt="check status image" class="icon__image">
                 </button>
@@ -68,12 +144,12 @@
         </h1>
         <section class="menu main__section">
             <ul class="buttons menu__list">
-                <li class="button button--main-page buttons_item">Ремонтируемые бренды</li>
-                <li class="button button--main-page buttons_item ">Ремонтируемые устройства</li>
-                <li class="button button--main-page buttons_item">Цены на услуги</li>
-                <li class="button button--main-page buttons_item">Адреса сервисных центров</li>
-                <li class="button button--main-page buttons_item">Специальные цены</li>
-                <li class="button button--main-page buttons_item">Отзывы</li>
+                <li class="button button--main-page buttons__item">Ремонтируемые бренды</li>
+                <li class="button button--main-page buttons__item ">Ремонтируемые устройства</li>
+                <li class="button button--main-page buttons__item">Цены на услуги</li>
+                <li class="button button--main-page buttons__item">Адреса сервисных центров</li>
+                <li class="button button--main-page buttons__item">Специальные цены</li>
+                <li class="button button--main-page buttons__item">Отзывы</li>
             </ul>
         </section>
         <section class="text-main main__section">
@@ -94,6 +170,156 @@
                 <img class="manage-img__img" src="image/MG_3223.jpg" alt="cps office photo">
             </div>
         </section>
+        <section class="brands-list main__section">
+            <h2 class="text-header-second brands-list__header">
+                Ремонт техники различных брендов
+            </h2>
+            <div class="swiper brands-list__list mySwiper">
+                <ul class="swiper__wrapper swiper-wrapper buttons">
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/Lenovo_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image"> 
+                        </button> 
+                    </li> 
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/samsung_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/apple_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/Bosch_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/HP_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/acer_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/ViewSonic_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/sony_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/Lenovo_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/Lenovo_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+                    <li class="swiper__slide swiper-slide button button--brands-list buttons__item ">
+                        <img src="image/Lenovo_logo.png" alt="lenovo logo" class="button__preimage">
+                        <button class=" icon icon--brands button__area">
+                            <img src="icons/dropdown.svg" alt="dropdown button" class="icon__image">
+                        </button>
+                    </li>
+               </ul>
+                <div class="swiper-pagination brands-list__pagination">
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      (function() {
+
+        'use strict';
+
+        // breakpoint where swiper will be destroyed
+        // and switches to a dual-column layout
+        const breakpoint = window.matchMedia( '(min-width:480px)' );
+
+        // keep track of swiper instances to destroy later
+        let mySwiper;
+
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+
+        const breakpointChecker = function() {
+
+            // if larger viewport and multi-row layout needed
+            if ( breakpoint.matches === true ) {
+
+            // clean up old instances and inline styles when available
+            if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+
+            // or/and do nothing
+            return;
+
+            // else if a small viewport and single column layout needed
+            } else if ( breakpoint.matches === false ) {
+
+                // fire small viewport version of swiper
+                return enableSwiper();
+
+            }
+
+        };
+        
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+
+        const enableSwiper = function() {
+
+            mySwiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+        };
+
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+
+        // keep an eye on viewport size changes
+        breakpoint.addListener(breakpointChecker);
+
+        // kickstart
+        breakpointChecker();
+
+
+
+        })(); /* IIFE end */
+    </script>
+
 </body>
 </html>
