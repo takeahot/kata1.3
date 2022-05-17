@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru" class="html" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>
+        Услуги и сервисы
+    </title>
+</head>
+<body class="page">
+    <header class="header page__header ">
+        <nav class="nav header__left-side ">
+            <ul class="buttons nav__list">
+                <li class="button buttons__item header__elem--hidden--lg">
+                    <input type="checkbox" name="menu_check" id="menu_check" class="button__check" aria-hidden="true">
+                    <label for="menu_check" class="icon button__area">
+                        <button type="button" title="open menu" tabindex="-1" class="button__accessibility">
+                        </button>
+                        <img src="icons/menu.svg" alt="menu icon" class="icon__image">
+                    </label>
+                    <div class="menu__field button__menu">
+                    </div>
+                </li>
+                <li class="separator header__separator header__elem--hidden--xs header__elem--hidden--lg" aria-hidden="true"></li>
+                <li class="button buttons__item header__elem--hidden--lg">
+                    <a href="" title="home link" class="logo button__logo">
+                        <img src="icons/logo.svg" alt="logo image" class="logo__img">
+                    </a>
+                </li>
+           </ul>
+        </nav>
+        <div class="separator header__separator header__elem--hidden--sm header__elem--hidden--lg" aria-hidden="true"></div>
+        <ul class="buttons header__right-side">
+            <li class="button buttons__item header__elem--hidden--xs header__elem--hidden--lg">
+                <button type="button" title="call button" class="icon button__area">
+                    <img src="icons/phone.svg" alt="call image" class="icon__image">
+                </button>
+            </li>
+            <li class="button buttons__item header__elem--hidden--xs header__elem--hidden--lg">
+                <button class="icon button__area" type="button" title="chat button">
+                    <img src="icons/chat.svg" alt="chat image" class="icon__image">
+                </button>
+            </li>
+            <li class="button buttons__item header__elem--hidden--xs header__elem--hidden--lg">
+                <button class="icon button__area" type="button" title="profile button">
+                    <img src="icons/profile.svg" alt="profile image" class="icon__image">
+                </button>
+            </li>
+            <li class="separator header__separator header__elem--hidden--xs header__elem--hidden--lg" aria-hidden="true"></li>
+            <li class="button buttons__item header__elem--poping--lg">
+                <span class="header__text header__elem--hidden--xs header__elem--hidden--sm">Оставить заявку</span>
+                <button class="icon button__area" type="button" title="repair button">
+                    <img src="icons/repair.svg" alt="repair image" class="icon__image">
+                </button>
+            </li>
+            <li class="button buttons__item header__elem--poping--lg">
+                <span class="header__text header__elem--hidden--xs header__elem--hidden--sm ">Статус ремонта</span>
+                <button class="icon button__area" type="button" title="check status button">
+                    <img src="icons/checkstatus.svg" alt="check status image" class="icon__image">
+                </button>
+            </li>
+        </ul>
+    </header> 
+    <main class="main page__main">
+        <h1 class="text-header-first main__section">
+            Услуги и сервисы
+        </h1>
+        <section class="menu main__section">
+            <ul class="buttons menu__list">
+                <li class="button button--main-page buttons_item">Ремонтируемые бренды</li>
+                <li class="button button--main-page buttons_item ">Ремонтируемые устройства</li>
+                <li class="button button--main-page buttons_item">Цены на услуги</li>
+                <li class="button button--main-page buttons_item">Адреса сервисных центров</li>
+                <li class="button button--main-page buttons_item">Специальные цены</li>
+                <li class="button button--main-page buttons_item">Отзывы</li>
+            </ul>
+        </section>
+        <section class="text-main main__section">
+            <label for="text-main__read-more-check" class="text-main__read-more-label">
+                <input type="checkbox" id="text-main__read-more-check" class="text-main__read-more-check" title="checkReadMore">
+                <span class="text-main__read-more-text">Читать далее</span>
+                <span class="text-main__text">
+                    <p class="text-main__parag">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </p>
+                    <br>
+                    <p class="text-main__parag">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    </p>
+                </span>
+            </label>
+            <div class="manage-img text-main__decorate-img">
+                <img class="manage-img__img" src="image/MG_3223.jpg" alt="cps office photo">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

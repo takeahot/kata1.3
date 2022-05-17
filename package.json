@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/takeahot/kata1.3#readme",
   "dependencies": {
-    "sass": "^1.49.9"
+    "sass": "^1.51.0"
   }
 }

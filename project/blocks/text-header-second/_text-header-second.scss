@@ -1,0 +1,24 @@
+.text-header-second{
+	font-size: $font-size--h2;
+	line-height: $line-height-h2;
+	padding: 16px;
+	padding-top: 15px;
+	margin: 0;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    text-transform: uppercase;
+	letter-spacing: -0.2px;
+	color: #7E7E82;
+	font-weight: normal;
+	border-top: solid 1px #D9FFF5;
+ 
+
+	@media (min-width: $screen-md) {
+		// align-self: flex-start;
+		padding: 16px 24px;
+	}
+
+	@media (min-width: $screen-lg) {
+		padding: 16px 32px;
+	}
+
+}

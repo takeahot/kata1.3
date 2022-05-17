@@ -1,6 +1,7 @@
 // @import "../../../docs/styles/variables.scss";
 
 .page {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	font-family: $font-family;
@@ -14,9 +15,15 @@
 	width: 100vw;
 	overflow-x: hidden;
 	list-style: none;
+	letter-spacing: -0.2px;
 
 	@media (min-width:$screen-md) {
 		line-height: $line-height-md;	
+	}
+
+	@media (min-width:$screen-lg) {
+		flex-direction: row;
+		width: auto;
 	}
 
 	&__header {
@@ -25,12 +32,13 @@
 		flex: 0 1 88px;
 
 		@media (min-width: $screen-lg) {
-			min-height: 0;			
-			flex: 0 1 0;
+			// min-height: 0;			
+			// flex: 0 1 0;
 		}
 	}
 
 	&__main {
+		margin-top: 42px;
 		flex: 1 1 auto;
 	}
 }
