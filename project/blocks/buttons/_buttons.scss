@@ -18,6 +18,12 @@
 			padding-left: 32px;
 		}
 
+		&--after-separator {
+			@media ( min-width: $screen-sm ) {
+				padding-left: 20px;
+			}
+		}
+
 		&--less-first-field {
 			padding-left: 0px;
 		}
@@ -25,6 +31,12 @@
 		&--side {
 			padding-left: 0;
 			flex-basis: 32px;
+
+			@media (min-width: $screen-md) {
+				padding-top: 32px;
+				flex-basis: 24px;
+				height: 24px;
+			}
 		}		
 
 		&--to-tail {

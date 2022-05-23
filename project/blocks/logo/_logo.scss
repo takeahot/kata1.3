@@ -1,8 +1,18 @@
 .logo {
   display: block;
+
+  @media (min-width:$screen-presm) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .logo__img {
   display: block;
+
+  @media (min-width:$screen-presm) {
+    width: 100%;
+    height: 100%;
+  }
 }
 

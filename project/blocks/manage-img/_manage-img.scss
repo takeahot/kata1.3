@@ -2,15 +2,21 @@
     display: flex;
     justify-content: center;
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-sm) {
         justify-content: flex-end;
     }
 
     &__img {
         height: 176px; 
-        margin:auto;
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
 
-        @media (min-width: $screen-md) {
+        @media (min-width: $screen-presm) {
+            margin: 0 24px;
+        }
+
+        @media (min-width: $screen-sm) {
             height: 208px; 
             margin: 0;
         }

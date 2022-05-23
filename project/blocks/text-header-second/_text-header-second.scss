@@ -4,6 +4,7 @@
 	padding: 16px;
 	padding-top: 15px;
 	margin: 0;
+	margin-top: 24px;
     background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
     text-transform: uppercase;
 	letter-spacing: -0.2px;
@@ -12,13 +13,17 @@
 	border-top: solid 1px #D9FFF5;
  
 
-	@media (min-width: $screen-md) {
+	@media (min-width: $screen-presm) {
 		// align-self: flex-start;
+		margin-top: 32px;
 		padding: 16px 24px;
+		padding-top: 15px;
 	}
 
 	@media (min-width: $screen-lg) {
+		margin-top: 51px;
 		padding: 16px 32px;
+		padding-top: 15px;
 	}
 
 }

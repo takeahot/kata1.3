@@ -6,8 +6,8 @@
 	margin: 0;
 	letter-spacing: -0.6px;
 
-	@media (min-width: $screen-md) {
-		flex-basis: 100%;
+	@media (min-width: $screen-presm) {
+		// flex-basis: 100%;
 		align-self: flex-start;
 		padding: 24px 24px 0px;
 	}

@@ -4,7 +4,7 @@
 	flex-direction: column;
 	padding-top: 24px;
 
-	@media (min-width: $screen-md) {
+	@media (min-width: $screen-sm) {
 		flex-direction: row;	
 		padding: 32px 24px 0px;
 	}
@@ -21,7 +21,11 @@
 		flex-grow: 1;
 		padding: 0px 16px;
 
-		@media (min-width: $screen-md) {
+		@media (min-width: $screen-presm) {
+			padding: 0px 24px;
+		}
+
+		@media (min-width: $screen-sm) {
 			padding: 0px;
 			flex-basis: 360px;
 		}
@@ -44,7 +48,7 @@
 		order: 1;
 		max-height: 90px;
 
-		@media (min-width:$screen-md) {
+		@media (min-width:$screen-sm) {
 			max-height: 160px;	
 			padding-right: 48px;
 		}
@@ -60,6 +64,11 @@
 		padding-left: 32px;
 		letter-spacing: -0.1px;
 
+		@media (min-width:$screen-sm) {
+			padding-top: 10px;
+			padding-left: 34px;
+		}
+
 		&::before {
 			position: absolute;
 			content: url(../icons/readMore.svg);
@@ -67,16 +76,23 @@
 			left: 9px;
 			top: 26px;
 			margin: -10px;
+
+			@media (min-width:$screen-sm) {
+				top:19px;
+				left: 11px;
+
+			}
 		}
 	}
 
 	&__decorate-img {
-		padding: 16px 0 24px 0;
+		padding: 16px 0 0 0;
 
-		@media (min-width:$screen-md) {
+		@media (min-width:$screen-sm) {
 			flex: 1 1 360px;
 			padding: 0;
 			overflow: hidden;
+			border-radius: 6px;
 		}
 	}	
 
