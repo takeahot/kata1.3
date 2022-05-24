@@ -13,7 +13,7 @@
 	}
 
 	@media (min-width: $screen-lg) {
-		padding: 0 32px;
+		padding: 0 35px;
 	}
 
 	&::before {
@@ -24,6 +24,10 @@
 		border-right: 4px solid #41f6d7;
 		border-left: 4px solid transparent;
 		border-radius: 4px;
+
+		@media (min-width: $screen-lg) {
+			left: 316px;
+		}
 	}
 
 }

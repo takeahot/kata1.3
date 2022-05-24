@@ -86,6 +86,11 @@
 		white-space: nowrap;
 		letter-spacing: -0.2px;
 		color: #7E7E82;
+		margin-top: 6.5px;
+
+		@media (min-width: $screen-lg) {
+			padding: 0px 22.5px;	
+		}
 
 	}
 

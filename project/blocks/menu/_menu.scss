@@ -7,7 +7,7 @@
 	}
 	
 	@media (min-width:$screen-lg) {
-		padding: 8.37px 34px 0px;
+		padding: 2px 34px 0px;
 	}
 
 	&__list {
@@ -72,6 +72,10 @@
 		@media (min-width: $screen-md) {
 			padding: 0px 24px;	
 		}
+
+		@media (min-width: $screen-lg) {
+			min-height: 110px;
+		}
 	}
 
 	&__logo {
@@ -119,6 +123,12 @@
 			padding-top: 32px;
 		}
 
+		@media (min-width: $screen-lg) {
+			min-height: min-content;
+			padding-top: 25.5px;
+			height: 24px;
+		}
+
 		&:first-of-type {
 			padding-top: 4px;	
 
@@ -127,6 +137,13 @@
 				padding-top: 32px;
 				height: 24px;
 			}
+
+			@media (min-width: $screen-lg) {
+				min-height: min-content;
+				padding-top: 8px;
+				height: 24px;
+			}
+
 
 		}
 

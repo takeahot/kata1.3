@@ -10,7 +10,7 @@
 	}
 
 	@media (min-width: $screen-lg) {
-		padding: 10px 32px 0px;
+		padding: 2px 32px 0px;
 
 	}
 
@@ -51,6 +51,10 @@
 		@media (min-width:$screen-sm) {
 			max-height: 160px;	
 			padding-right: 48px;
+		}
+
+		@media (min-width:$screen-lg) {
+			padding-top: 10px;
 		}
 	}
 
